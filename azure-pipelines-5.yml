@@ -16,5 +16,5 @@ steps:
     filepath: 'Ostorlab_insecure_app.apk'
     platform: 'android'
     artifactsDir: '$(build.artifactStagingDirectory)/../'
-    waitForResults: true
+    waitForResults: False
     breakBuildOnScore: true
