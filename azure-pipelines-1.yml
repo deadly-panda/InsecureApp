@@ -17,4 +17,3 @@ steps:
     filepath: 'Ostorlab_insecure_app.apk'
     platform: 'android'
     artifactsDir: '$(build.artifactStagingDirectory)/../'
-    title: 'Some title'
