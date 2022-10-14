@@ -1,0 +1,19 @@
+# Gradle
+# Build your Java project and run tests with Gradle using a Gradle wrapper script.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  name: default
+  vmImage: 'SuperNovaZJX440'
+
+steps:
+- task: ostorlab-azure-security-scanner@1
+  inputs:
+    apiKey: 'o1uDMIe0.SSHBqelI4q9OBmFMGHIdck6GEf2YvEqG'
+    filepath: 'Ostorlab_insecure_app.apk'
+    platform: 'android'
+    artifactsDir: '$(build.artifactStagingDirectory)/../'
