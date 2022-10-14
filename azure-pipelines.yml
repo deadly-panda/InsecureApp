@@ -7,15 +7,14 @@ trigger:
 - master
 
 pool:
-  vmImage: 'macos-latest'
+  name: default
+  vmImage: 'SuperNovaZJX440'
 
 steps:
-- task: Gradle@2
+- task: ostorlab-azure-security-scanner@1
   inputs:
-    workingDirectory: ''
-    gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m'
-    publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug'
-
+    apiKey: 'o1uDMIe0.SSHBqelI4q9OBmFMGHIdck6GEf2YvEqG'
+    filepath: 'Ostorlab_insecure_app.apk'
+    platform: 'android'
+    artifactsDir: '$(build.artifactStagingDirectory)/../'
+    title: 'Some title'
