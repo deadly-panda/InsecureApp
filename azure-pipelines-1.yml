@@ -14,7 +14,7 @@ steps:
 - task: ostorlab-azure-security-scanner@1
   inputs:
     apiKey: 'o1uDMIe0.SSHBqelI4q9OBmFMGHIdck6GEf2YvEqG'
-    filepath: 'a'
+    filepath: 'Ostorlab_insecure_app.apk'
     platform: 'android'
-    artifactsDir: '$(build.artifactStagingDirectory)/../Ostorlab_insecure_app.apk'
+    artifactsDir: '$(build.artifactStagingDirectory)/../'
     title: 'Some title'
