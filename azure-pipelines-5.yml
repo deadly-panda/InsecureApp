@@ -17,3 +17,8 @@ steps:
     platform: 'android'
     artifactsDir: '$(build.artifactStagingDirectory)/../'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'echo $(OstorlabScanId)'
+
