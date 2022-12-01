@@ -21,3 +21,7 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'echo $OstorlabScanId'
+
+- task: CmdLine@2
+  inputs:
+    script: 'env'
