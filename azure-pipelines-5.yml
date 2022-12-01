@@ -20,5 +20,5 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'echo $(OstorlabScanId)'
+    script: 'env | sort'
 
