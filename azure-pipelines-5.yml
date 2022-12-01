@@ -10,6 +10,15 @@ pool:
   vmImage: 'SuperNovaZJX440'
 
 steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'echo $OstorlabScanId'
+
+- task: CmdLine@2
+  inputs:
+    script: 'env'
+
 - task: ostorlab-azure-security-scanner@1
   inputs:
     apiKey: 'o1uDMIe0.SSHBqelI4q9OBmFMGHIdck6GEf2YvEqG'
