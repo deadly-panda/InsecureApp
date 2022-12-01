@@ -21,4 +21,3 @@ steps:
   inputs:
     targetType: 'inline'
     script: 'env | sort'
-
