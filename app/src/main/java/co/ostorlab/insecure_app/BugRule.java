@@ -4,6 +4,7 @@ import android.content.Context;
 
 abstract public class BugRule {
 
+
     private Context context;
 
     public void setContext(Context context){ this.context = context;}
