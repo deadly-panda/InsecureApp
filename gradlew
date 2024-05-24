@@ -7,6 +7,7 @@
 ##############################################################################
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+yes | /root/cmdline-tools/bin/sdkmanager --sdk_root=/root/cmdline-tools/ --licenses
 DEFAULT_JVM_OPTS=""
 
 APP_NAME="Gradle"
