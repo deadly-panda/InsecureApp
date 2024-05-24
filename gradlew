@@ -7,6 +7,8 @@
 ##############################################################################
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+yes | /root/cmdline-tools/bin/sdkmanager --sdk_root=/root/cmdline-tools/ --licenses
+
 DEFAULT_JVM_OPTS=""
 
 APP_NAME="Gradle"
@@ -154,7 +156,6 @@ fi
 function splitJvmOpts() {
     JVM_OPTS=("$@")
 }
-yes | /root/cmdline-tools/bin/sdkmanager --sdk_root=/root/cmdline-tools/ --licenses
 eval splitJvmOpts $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS
 JVM_OPTS[${#JVM_OPTS[*]}]="-Dorg.gradle.appname=$APP_BASE_NAME"
 
